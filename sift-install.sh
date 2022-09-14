@@ -50,11 +50,11 @@ wget https://raw.githubusercontent.com/PHPIDS/PHPIDS/master/lib/IDS/default_filt
 
 echo "source ~/peda/peda.py" >> ~/.gdbinit
 
-if [ $(echo "$SHELL") == "/usr/bin/zsh" ];then
+if [ $(echo "$SHELL") == "/bin/zsh" ];then
         echo "export PATH=/home/sansforensics/bin:\$PATH" >> /home/sansforensics/.zshrc
         echo "alias open='xdg-open'" >> /home/sansforensics/.zshrc
         echo "export PATH=~/.local/bin:\$PATH" >> /home/sansforensics/.zshrc
-elif [ $(echo "$SHELL") == "/usr/bin/bash" ];then
+elif [ $(echo "$SHELL") == "/bin/bash" ];then
         echo "export PATH=/home/sansforensics/bin:\$PATH" >> /home/sansforensics/.bashrc
         echo "alias open='xdg-open'" >> /home/sansforensics/.bashrc
         echo "export PATH=~/.local/bin:\$PATH" >> /home/sansforensics/.bashrc
